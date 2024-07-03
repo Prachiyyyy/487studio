@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-colorbg text-textdark font-serif">
+    <div class="text-center text-textdark text-sm border-b border-black">NEW! MEET THE REFILL CANS</div>
+    <header class="flex justify-between bg-colorbg p-4">
+        <div id="graza" class=""><h1 class="text-7xl font-bold items-left" id="">GRAZA</h1></div>
+        <div class="navbar pl-9 bg-colorbg">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-textlight">Shop</a></li>
+                <li><a href="#" class="text-textlight">Get Refills</a></li>
+                <li><a href="#" class="text-textlight">About</a></li>
+                <li><a href="#" class="text-textlight">Glog</a></li>
+                <li><a href="#" class="text-textlight">Account</a></li>
+                <li><button class="border border-black rounded-3xl w-20 h-8 bg-lightbg flex items-center justify-center text-center hover:bg-green-major text-textdark">Cart [ ]</button></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main class="container mx-auto flex">
+        <div class="photocorner w-1/2 bg-white relative">
+            <img id="main-image" src="graza-pdp-duo-header-3_2x_d473f590-4515-4252-893f-1aa7e3fbbe19.jpg" alt="Virgin oil" class="w-full h-full object-cover">
+            <div class="thumbnail-images flex flex-col absolute -mt-96 space-y-3">
+                <img src="graza-pdp-duo-header-3_2x_d473f590-4515-4252-893f-1aa7e3fbbe19.jpg" alt="T1" class="thumbnail w-12 cursor-pointer border-textdark border-2 rounded-full" onclick="changeImage('graza-pdp-duo-header-3_2x_d473f590-4515-4252-893f-1aa7e3fbbe19.jpg')">
+                <img src="Screenshot (270).png" alt="T1" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (270).png')">
+                <img src="Screenshot (271).png" alt="T2" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (271).png')">
+                <img src="Screenshot (273).png" alt="T3" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (273).png')">
+                <img src="Screenshot (274).png" alt="T4" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (274).png')">
+            </div>
+        </div>
+        <div class="w-1/2 bg-colorbg p-4">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="flex items-center text-5xl font-semibold mb-4 text-textdark font-serif"><strong>"The Duo"</strong></h1>
+                <h2 class="flex items-center text-5xl font-semibold mb-4 text-textdark font-serif">
+                    <u>Drizzle & Sizzle Set</u>
+                </h2>
+            </div>
+            <div class="review mb-4 flex flex-col items-center justify-center">
+                <span>⭐⭐⭐⭐⭐ 1000+ Reviews</span>
+            </div>
+            <div class="pricebox border border-black rounded-xl p-4 mb-4 w-3/4 mx-auto bg-lightbg">
+                <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
+                <div class="flex justify-between space-x-4 p-3 border-b border-dotted border-black p-4">
+                    <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32 cursor-pointer" >
+                        <div class="bg-textdark text-white text-center py-1.5 top-section">
+                            +10% Off
+                        </div>
+                        <div class="bg-custom-color-1 text-center py-4" id="colorbox">
+                            <div class="text-2xl font-bold">1</div>
+                            <div class="text-lg">Set</div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32">
+                        <div class="bg-textdark text-white text-center py-1.5 top-section">
+                            +14% Off
+                        </div>
+                        <div class="bg-lightbg text-center py-4 bottom-section">
+                            <div class="text-2xl font-bold">2</div>
+                            <div class="text-lg">Sets</div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32">
+                        <div class="bg-textdark text-white text-center py-1.5 top-section">
+                            +15% Off
+                        </div>
+                        <div class="bg-lightbg text-center py-4 bottom-section">
+                            <div class="text-2xl font-bold">3</div>
+                            <div class="text-lg">Sets</div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32">
+                        <div class="bg-textdark text-white text-center py-1.5 top-section">
+                            +17% Off
+                        </div>
+                        <div class="bg-lightbg text-center py-4 bottom-section">
+                            <div class="text-2xl font-bold">6</div>
+                            <div class="text-lg">Sets</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="otp mb-4 border-b border-dotted border-black p-4">
+                    <input type="radio" name="toggle" id="showDiv1" class="mr-2">
+                    <label for="otp" class="text-xl font-large text-textdark">One time Purchase</label>
+                </div>
+                <div class="subscription mb-4 border-b border-dotted border-black p-4">
+                    <input type="radio" name="toggle" id="showDiv2" class="mr-2">
+                    <label for="subscribe" class="text-xl font-large text-textdark">Subscribe & Save 10%</label>
+                </div>
+                <div id="myDiv1" class="toggleDiv flex flex-col items-center w-full">
+                    <button class="btn-3d bg-green-major text-textdark font-bold py-2 px-4 rounded-3xl border w-96 border-black">
+                        Add to Cart
+                    </button>
+                </div>
+                <div id="myDiv2" class="toggleDiv">
+                    <div class="border-b border-dotted border-black p-4">
+                        <select id="frequency" name="frequency" class="mt-1 block w-full p-2 border border-black rounded-3xl bg-lightbg">
+                            <option value="1-month">Frequency: Every 1 Month</option>
+                            <option value="2-months">Every 2 Months</option>
+                            <option value="3-months">Every 3 Months</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <button class="btn-3d bg-green-major text-textdark font-bold py-2 px-4 rounded-3xl border w-96 mt-4 border-black">
+                            Subscribe
+                        </button>
+                        <h4 class="flex items-center"> Skip or cancel anytime</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center p-4 shadow-md">
+        <p>&copy; 2024 Graza. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>487 take home project</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-colorbg text-textdark font-serif">
+    <div class="text-center text-textdark text-sm border-b border-black">NEW! MEET THE REFILL CANS</div>
+    <header class="flex justify-between bg-colorbg p-4">
+        <div id="graza" class=""><h1 class="text-7xl font-bold items-left" id="">GRAZA</h1></div>
+        <div class="navbar pl-9 bg-colorbg">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-textlight">Shop</a></li>
+                <li><a href="#" class="text-textlight">Get Refills</a></li>
+                <li><a href="#" class="text-textlight">About</a></li>
+                <li><a href="#" class="text-textlight">Glog</a></li>
+                <li><a href="#" class="text-textlight">Account</a></li>
+                <li><button class="border border-black rounded-3xl w-20 h-8 bg-lightbg flex items-center justify-center text-center hover:bg-green-major text-textdark">Cart [ ]</button></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main class="container mx-auto flex">
+            <div class="photocorner w-1/2 bg-white">
+                <img id="main-image" src="graza-pdp-duo-header-3_2x_d473f590-4515-4252-893f-1aa7e3fbbe19.jpg" alt="Virgin oil" id="background-image" class="w-full h-full object-cover">
+                <div class="thumbnail-images flex flex-col absolute -mt-96 space-y-3">
+                    <img src="graza-pdp-duo-header-3_2x_d473f590-4515-4252-893f-1aa7e3fbbe19.jpg" alt="T1" class="thumbnail w-12 cursor-pointer border-textdark border-2 rounded-full" onclick="changeImage('graza-pdp-duo-header-3_2x_d473f590-4515-4252-893f-1aa7e3fbbe19.jpg')">
+                    <img src="Screenshot (270).png" alt="T1" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (270).png')">
+                    <img src="Screenshot (271).png" alt="T2" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (271).png')">
+                    <img src="Screenshot (273).png" alt="T3" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (273).png')">
+                    <img src="Screenshot (274).png" alt="T4" class="thumbnail w-12 cursor-pointer transform hover:scale-110 transition-transform h-12 border-textdark border-2 rounded-full" onclick="changeImage('Screenshot (274).png')">
+                </div>
+            </div>
+            <div class="w-1/2 bg-colorbg p-4 ">
+                <div class="flex flex-col items-center justify-center">
+                    <h1 class="flex items-center text-5xl font-semibold mb-4 text-textdark font-serif"><strong>"The Duo"</strong></h1>
+                     <h2 class="flex items-center text-5xl font-semibold mb-4 text-textdark font-serif">
+                        <u>Drizzle & Sizzle Set</u>
+                     </h2>
+                </div>
+                    <div class="review mb-4 flex flex-col items-center justify-center">
+                    <span>⭐⭐⭐⭐⭐ 1000+ Reviews</span>
+                </div>
+                <div class="pricebox border border-black rounded-xl p-4 mb-4 w-3/4 mx-auto bg-lightbg">
+                    <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>  
+                    <div class="flex justify-between space-x-4 p-3 border-b border-dotted border-black p-4">
+                        <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32" id="">
+                            <div class="bg-textdark text-white text-center py-1.5 top-section">
+                                +10% Off
+                            </div>
+                            <div class="bg-lightbg text-center py-4 bottom-section color1 color2 cursor-pointer" id="colordiv">
+                                <div class="text-2xl font-bold">1</div>
+                                <div class="text-lg">Set</div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32" id="ChangeColor">
+                            <div class="bg-textdark text-white text-center py-1.5 top-section">
+                                +14% Off
+                            </div>
+                            <div class="bg-lightbg text-center py-4 bottom-section">
+                                <div class="text-2xl font-bold">2</div>
+                                <div class="text-lg">Sets</div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32" id="ChangeColor">
+                            <div class="bg-textdark text-white text-center py-1.5 top-section">
+                                +15% Off
+                            </div>
+                            <div class="bg-lightbg text-center py-4 bottom-section">
+                                <div class="text-2xl font-bold">3</div>
+                                <div class="text-lg">Sets</div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-black bg-lightbg w-28 h-32" id="ChangeColor">
+                            <div class="bg-textdark text-white text-center py-1.5 top-section">
+                                +17% Off
+                            </div>
+                            <div class="bg-lightbg text-center py-4 bottom-section">
+                                <div class="text-2xl font-bold">6</div>
+                                <div class="text-lg">Sets</div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                  
+                    <div>  
+                   
+                        <div class="otp mb-4 border-b border-dotted border-black p-4">
+                        <input type="radio" name="toggle" id="showDiv1" class="mr-2">
+                        <label for="otp" class="text-xl font-large text-textdark">One time Purchase</label></div>
+                        <div class="subscription mb-4 border-b border-dotted border-black p-4">
+                        <input type="radio" name="toggle" id="showDiv2" class="mr-2">
+                        <label for="subscribe" class="text-xl font-large text-textdark">Subscribe & Save 10%</label></div>
+                    
+                     <div id="myDiv1" class="toggleDiv flex flex-col items-center w-full ">
+                        <button class="btn-3d  bg-green-major text-textdark font-bold py-2 px-4 rounded-3xl border w-96 border-black">
+                            Add to Cart
+                        </button>
+                     </div>
+                    <div id="myDiv2" class="toggleDiv">
+                            <div class="border-b border-dotted border-black p-4 ">    
+                            <select id="frequency" name="frequency" class="mt-1 block w-full p-2 border border-black rounded-3xl bg-lightbg">
+                            <option value="1-month">Frequency: Every 1 Month</option>
+                            <option value="2-months">Every 2 Months</option>
+                            <option value="3-months">Every 3 Months</option>
+                            </select>
+                            </div>
+                               
+                            <div class="flex flex-col items-center">
+                                <button class="btn-3d  bg-green-major text-textdark font-bold py-2 px-4 rounded-3xl border w-96 mt-4 border-black">
+                                    Subscribe
+                                </button>
+                                <h4 class="flex items-center"> Skip or cancel anytime</h4>
+                            </div>
+                    </div>
+                    
+                
+            </div>
+    </main>
+    
+           
+    <footer class="text-center p-4] shadow-md">
+        <p>&copy; 2024 Graza. All rights reserved.</p>
+    </footer>
+</body> 
+</html> -->

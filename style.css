@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.toggleDiv {
+    display: none;
+}
+
+.btn-3d {
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: -1;
+}
+.btn-3d:hover {
+    transform: translate(5px, 5px);
+}
+.btn-3d:hover::before {
+    transform: translate(-5px, -5px);
+    box-shadow: none;
+}
+
+.color1 {
+    background-color: #fff4ed; 
+}
+.color2 {
+    background-color: #9eef81; 
+}
+
+.graza {
+    padding-bottom: -50px;
+    margin-bottom: -50px;
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    z-index: 2; 
+}
+.background-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.slide-enter-active {
+    @apply transition-transform duration-500 ease-in-out;
+  }
+  .slide-leave-active {
+    @apply transition-transform duration-500 ease-in-out;
+  }
+  .slide-enter-from {
+    transform: translateX(100%);
+  }
+  .slide-enter-to {
+    transform: translateX(0);
+  }
+  .slide-leave-from {
+    transform: translateX(0);
+  }
+  .slide-leave-to {
+    transform: translateX(-100%);
+  }
+
+  .bg-custom-color-1 { background-color: #fff4ed; }
+  .bg-custom-color-2 { background-color: #d3e12d; }
